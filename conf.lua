@@ -13,9 +13,4 @@ function love.conf(t)
     t.console = true          -- Attach a console (boolean, Windows only),Used for debugging purposes, remove when releasing
     t.title = "RumbleDungeonStreetFighter"        -- The title of the window the game is in (string) 
     t.author = "Pulkit Sharma"        -- The author of the game (string)
-    t.screen.fullscreen = true -- Enable fullscreen (boolean)
-    t.screen.vsync = false       -- Enable vertical sync (boolean)
-    t.screen.fsaa = 0           -- The number of FSAA-buffers (number)
-    t.screen.height = 600       -- The window height (number)
-    t.screen.width = 800        -- The window width (number)
 end

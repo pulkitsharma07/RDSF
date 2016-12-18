@@ -228,6 +228,12 @@ function love.keypressed(k)
     TEsound.volume("back",0.25)       
     TEsound.playLooping("background.mp3","back") --start the background music
   end
+
+  if game_state == "gameover" then  
+    love.timer.sleep(3);
+    TEsound.stop("gameover");
+    os.exit();
+  end
 end
 
 
@@ -320,7 +326,7 @@ function love.update(dt)
     game_state = "gameover";  -- game is over indeed 
     love.graphics.setFont(font_menu);
     TEsound.stop("back");
-    TEsound.play("gameover.mp3",{},0.5);
+    TEsound.play("gameover.mp3","gameover",0.5);
   end
 
 
